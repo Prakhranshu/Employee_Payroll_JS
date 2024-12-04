@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="../Style/Employee_Profile.CSS">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="logo">
+                <img src="../Assets/WhatsApp Image 2024-11-28 at 17.09.11_2a5d92a6.jpg" height=50vh" width="50px">
+                <div style="font-size:x-large;">
+                    <span style="color: #82A70C;">EMPLOYEE</span><br>
+                    <span style="color: #42515F;">PAYROLL</span>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <form class="form">
+                <input type="hidden" id="employeeId" />
+                <table class="table">
+                    <th class="th" style="color: #42515F;">
+                        <h2>Employee Payroll Form</h2>
+                    </th>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td class="name1">
+                            <input type="text" class="name" placeholder="Enter Name">
+                        </td>
+                    </tr>
+                    <tr class="PI1">
+                        <td>
+                            Profile Image
+                        </td>
+                        <td class="PI">
+                            <div><input type="radio" name="PI"
+                                    value="../Assets\WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg"><img
+                                    src="../Assets\WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg" height=40vh"
+                                    width="40px"></div>
+                            <div><input type="radio" name="PI"
+                                    value="../Assets\WhatsApp Image 2024-11-29 at 15.39.04_b4552a30.jpg"><img
+                                    src="../Assets\WhatsApp Image 2024-11-29 at 15.39.04_b4552a30.jpg" height=40vh"
+                                    width="40px"></div>
+                            <div><input type="radio" name="PI"
+                                    value="../Assets\WhatsApp Image 2024-11-29 at 15.41.01_866faa95.jpg"><img
+                                    src="../Assets\WhatsApp Image 2024-11-29 at 15.41.01_866faa95.jpg" height=40vh"
+                                    width="40px"></div>
+                            <div><input type="radio" name="PI"
+                                    value="../Assets\WhatsApp Image 2024-11-29 at 15.49.19_cb7d09a7.jpg"><img
+                                    src="../Assets\WhatsApp Image 2024-11-29 at 15.49.19_cb7d09a7.jpg" height=40vh"
+                                    width="40px"></div>
+                        </td>
+                    </tr>
+                    <tr class="gender1">
+                        <td>
+                            Gender
+                        </td>
+                        <td class="gender">
+                            <div><input type="radio" name="gender" value="Male">Male</div>
+
+                            <div><input type="radio" name="gender" value="Female">Female</div>
+                        </td>
+                    </tr>
+                    <tr class="dept1">
+                        <td>
+                            Department
+                        </td>
+                        <td class="dept">
+                            <div><input type="checkbox" name="dept" value="HR">HR</div>
+
+                            <div><input type="checkbox" name="dept" value="Sales">Sales</div>
+
+                            <div><input type="checkbox" name="dept" value="Finance">Finance</div>
+
+                            <div><input type="checkbox" name="dept" value="Engineer">Engineer</div>
+
+                            <div><input type="checkbox" name="dept" value="Others">Others</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Salary
+                        </td>
+                        <td>
+                            <select name="range" id="Salary">
+                                <option>Select Salary</option>
+                                <option value="₹20,000">₹20,000</option>
+                                <option value="₹30,000">₹30,000</option>
+                                <option value="₹40,000">₹40,000</option>
+                                <option value="₹50,000">₹50,000</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Start Date
+                        </td>
+                        <td class="date">
+                            <div class="date-picker">
+                                <div><select id="day" name="day">
+                                        <option value="">Day</option>
+                                        <!-- Days (1-31) -->
+                                        <script>
+                                            for (let i = 1; i <= 31; i++) {
+                                                document.write(`<option value="${i}">${i}</option>`);
+                                            }
+                                        </script>
+                                    </select>
+                                </div>
+
+                                <div> <select id="month" name="month">
+                                        <option value="">Month</option>
+                                        <!-- Months (1-12) -->
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select id="year" name="year">
+                                        <option value="">Year</option>
+                                        <!-- Years (1900 - 2100) -->
+                                        <script>
+                                            for (let i = 1900; i <= 2100; i++) {
+                                                document.write(`<option value="${i}">${i}</option>`);
+                                            }
+                                        </script>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="notes1">
+                            Notes
+                        </td>
+                        <td class="notes">
+                            <!-- <input type="text" > -->
+                            <textarea rows="2" name="notes"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="submit">
+                        <td>
+                            <button><a href="./Employee_Payroll_Form.HTML">Cancel</a></button>
+                        </td>
+                        <td>
+                            <button>Submit</button>
+                            <button>Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
+</body>
+<script src="../JS/Employee_Profile.JS"></script>
+
+</html>
