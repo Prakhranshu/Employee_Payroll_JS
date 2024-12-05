@@ -5,32 +5,44 @@
       "name": "Prakhranshu Singh",
       "image": "../Assets/WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg",
       "gender": "Male",
-      "Department": "IT",
+      "Department": [
+        "HR",
+        "Sales"
+      ],
       "Salary": "₹30,000",
-      "StartDate": "29 Oct 2024"
+      "StartDate": "16-9-1915",
+      "notes": "hii"
     },
     {
       "id": "2",
       "name": "Richa Kashyap",
       "image": "../Assets/WhatsApp Image 2024-11-29 at 15.41.01_866faa95.jpg",
       "gender": "Female",
-      "Department": "Finance",
+      "Department": [
+        "HR",
+        "Sales"
+      ],
       "Salary": "₹30,000",
-      "StartDate": "29 Oct 2024"
+      "StartDate": "14-9-1916",
+      "notes": ""
     },
     {
       "id": "3",
       "name": "Rajesh Singh",
-      "image": "../Assets/WhatsApp Image 2024-11-29 at 15.39.04_b4552a30.jpg",
+      "image": "../Assets/WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg",
       "gender": "Male",
-      "Department": "Marketing HR",
-      "Salary": "₹30,000",
-      "StartDate": "11 Nov 2024"
+      "Department": [
+        "Sales",
+        "Engineer"
+      ],
+      "Salary": "₹20,000",
+      "StartDate": "17-9-1914",
+      "notes": ""
     },
     {
       "id": "5",
       "name": "Arisha",
-      "image": "../Assets\\WhatsApp Image 2024-11-29 at 15.41.01_866faa95.jpg",
+      "image": "../Assets/WhatsApp Image 2024-11-29 at 15.49.19_cb7d09a7.jpg",
       "gender": "Female",
       "Department": [
         "Sales"
@@ -42,7 +54,7 @@
     {
       "id": "6",
       "name": "Himanshu",
-      "image": "../Assets\\WhatsApp Image 2024-11-29 at 15.39.04_b4552a30.jpg",
+      "image": "../Assets/WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg",
       "gender": "Male",
       "Department": [
         "Others"
@@ -53,8 +65,8 @@
     },
     {
       "id": "7",
-      "name": "Ismail",
-      "image": "../Assets\\WhatsApp Image 2024-11-29 at 15.39.04_b4552a30.jpg",
+      "name": "Ismail Shaik",
+      "image": "../Assets/WhatsApp Image 2024-11-29 at 15.38.17_83bb37ee.jpg",
       "gender": "Male",
       "Department": [
         "HR",

@@ -49,6 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    document.querySelector(".add-btn").addEventListener("click", function (event) {
+            localStorage.setItem('editEmployeeId', null);
+            // Redirect to the edit form
+            window.location.href = './Employee_Profile.HTML';   
+    });
+
     // Handle delete functionality
     document.querySelector(".table").addEventListener("click", async function (event) {
         if (event.target.classList.contains("delete")) {
